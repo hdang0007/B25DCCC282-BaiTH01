@@ -3,193 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Hải Đăng - Portfolio</title>
+    <title>Nguyễn Hải Đăng | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
+    <header class="header">
         <nav class="navbar">
-
-            <h2 class="logo">Đăng.dev</h2>
-
-            <button id="menuBtn">☰</button>
-
-            <ul id="menu">
+            <a class="logo" href="#home">Đăng<span>.</span></a>
+            <button class="menu-button" id="menuBtn" aria-label="Mở menu">☰</button>
+            <ul class="menu" id="menu">
                 <li><a href="#home">Trang chủ</a></li>
                 <li><a href="#about">Giới thiệu</a></li>
                 <li><a href="#skills">Kỹ năng</a></li>
                 <li><a href="#projects">Dự án</a></li>
                 <li><a href="#contact">Liên hệ</a></li>
             </ul>
-
-            <button id="themeBtn">🌙</button>
-
+            <button class="theme-button" id="themeBtn" aria-label="Đổi giao diện">☾</button>
         </nav>
     </header>
 
-    <section id="home" class="hero">
-
-        <div class="hero-text">
-
-            <p>Xin chào, mình là</p>
-
-            <h1>Nguyễn Hải Đăng</h1>
-
-            <h2>Sinh viên Công nghệ thông tin</h2>
-
-            <p>
-                Mình đang học tập và phát triển kỹ năng
-                lập trình Web, JavaScript và các công nghệ
-                liên quan đến CNTT.
-            </p>
-
-            <a href="#projects" class="btn">
-                Xem dự án
-            </a>
-
-        </div>
-
-    </section>
-
-    <section id="about" class="section">
-
-        <h2>Giới thiệu bản thân</h2>
-
-        <p>
-            Mình là sinh viên ngành Công nghệ thông tin.
-            
-            
-        </p>
-
-    </section>
-
-    <section id="skills" class="section">
-
-        <h2>Kỹ năng</h2>
-
-        <div class="skills">
-
-            <div class="skill">
-                <h3>HTML</h3>
-                <p>Xây dựng cấu trúc website.</p>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Xin chào, mình là</p>
+                <h1>Nguyễn Hải Đăng</h1>
+                <h2>Sinh viên Công nghệ thông tin</h2>
+                <p class="hero-description">Mình yêu thích việc tạo ra những website đơn giản, dễ sử dụng và đang từng bước học thêm về lập trình web.</p>
+                <div class="hero-buttons">
+                    <a class="button button-primary" href="#projects">Xem dự án</a>
+                    <a class="button button-outline" href="#contact">Liên hệ với mình</a>
+                </div>
             </div>
-
-            <div class="skill">
-                <h3>CSS</h3>
-                <p>Thiết kế giao diện và responsive.</p>
+            <div class="hero-card">
+                <p class="card-label">Mục tiêu hiện tại</p>
+                <strong>Học tốt HTML, CSS và JavaScript</strong>
+                <div class="progress"><span></span></div>
+                <p>Luôn học hỏi và hoàn thiện bản thân mỗi ngày.</p>
             </div>
+        </section>
 
-            <div class="skill">
-                <h3>JavaScript</h3>
-                <p>Tạo các chức năng tương tác.</p>
+        <section id="about" class="section reveal">
+            <div class="section-title">
+                <p class="eyebrow">01 / Giới thiệu</p>
+                <h2>Một chút về mình</h2>
             </div>
-
-            <div class="skill">
-                <h3>Python</h3>
-                <p>Lập trình cơ bản và xử lý dữ liệu.</p>
+            <div class="about-content">
+                <p>Mình là sinh viên ngành Công nghệ thông tin. Mình đang tập trung xây dựng nền tảng về lập trình và thiết kế giao diện website.</p>
+                <p>Trong thời gian rảnh, mình thường tìm hiểu công nghệ mới, làm các bài tập nhỏ và luyện cách giải quyết vấn đề bằng code.</p>
             </div>
+        </section>
 
-        </div>
-
-    </section>
-
-    <section id="projects" class="section">
-
-        <h2>Dự án của tôi</h2>
-
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="Tìm kiếm dự án..."
-        >
-
-        <div class="projects">
-
-            <div class="project">
-                <h3>Quản lý thư viện</h3>
-
-                <p>
-                    Website quản lý sách, thành viên
-                    và hoạt động mượn trả.
-                </p>
-
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
+        <section id="skills" class="section section-light reveal">
+            <div class="section-title">
+                <p class="eyebrow">02 / Kỹ năng</p>
+                <h2>Những gì mình đang học</h2>
             </div>
-
-            <div class="project">
-                <h3>Quản lý đơn hàng</h3>
-
-                <p>
-                    Website quản lý đơn hàng và
-                    kiểm tra thông tin khách hàng.
-                </p>
-
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
+            <div class="skills">
+                <article class="skill"><span class="skill-number">01</span><h3>HTML</h3><p>Xây dựng cấu trúc nội dung rõ ràng và có ngữ nghĩa.</p></article>
+                <article class="skill"><span class="skill-number">02</span><h3>CSS</h3><p>Thiết kế giao diện, bố cục bằng Flexbox và Grid.</p></article>
+                <article class="skill"><span class="skill-number">03</span><h3>JavaScript</h3><p>Tạo các chức năng tương tác cho trang web.</p></article>
+                <article class="skill"><span class="skill-number">04</span><h3>Git</h3><p>Lưu trữ và quản lý các phiên bản của bài tập.</p></article>
             </div>
+        </section>
 
-            <div class="project">
-                <h3>Website luyện tiếng Anh</h3>
-
-                <p>
-                    Website luyện tập từ vựng và
-                    các bài học tiếng Anh.
-                </p>
-
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
+        <section id="projects" class="section reveal">
+            <div class="section-title project-heading">
+                <div><p class="eyebrow">03 / Dự án</p><h2>Một vài bài tập của mình</h2></div>
+                <input type="search" id="searchInput" placeholder="Tìm theo tên hoặc công nghệ..." aria-label="Tìm kiếm dự án">
             </div>
+            <div class="projects">
+                <article class="project"><span class="project-type">Bài tập 01</span><h3>Quản lý thư viện</h3><p>Website quản lý sách, thành viên và hoạt động mượn trả.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div></article>
+                <article class="project"><span class="project-type">Bài tập 02</span><h3>Quản lý đơn hàng</h3><p>Trang theo dõi đơn hàng và kiểm tra thông tin khách hàng.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div></article>
+                <article class="project"><span class="project-type">Bài tập 03</span><h3>Luyện tiếng Anh</h3><p>Website luyện từ vựng và ôn tập các bài học tiếng Anh.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div></article>
+            </div>
+            <p class="no-result" id="noResult">Không tìm thấy dự án phù hợp.</p>
+        </section>
 
-        </div>
+        <section id="contact" class="section contact-section reveal">
+            <div class="section-title"><p class="eyebrow">04 / Liên hệ</p><h2>Cùng trao đổi nhé</h2><p>Bạn có thể gửi lời nhắn cho mình qua biểu mẫu bên dưới.</p></div>
+            <form id="contactForm" novalidate>
+                <label for="name">Họ và tên</label>
+                <input type="text" id="name" placeholder="Nguyễn Văn A">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="email@example.com">
+                <label for="message">Nội dung</label>
+                <textarea id="message" maxlength="200" placeholder="Viết lời nhắn của bạn..."></textarea>
+                <p class="message-count"><span id="charCount">0</span>/200 ký tự</p>
+                <button class="button button-primary" type="submit">Gửi lời nhắn</button>
+                <p id="formMessage" role="alert"></p>
+            </form>
+        </section>
+    </main>
 
-    </section>
-
-    <section id="contact" class="section">
-
-        <h2>Liên hệ với tôi</h2>
-
-        <form id="contactForm">
-
-            <input
-                type="text"
-                id="name"
-                placeholder="Họ và tên"
-            >
-
-            <input
-                type="email"
-                id="email"
-                placeholder="Email"
-            >
-
-            <textarea
-                id="message"
-                placeholder="Nội dung tin nhắn"
-            ></textarea>
-
-            <button type="submit">
-                Gửi liên hệ
-            </button>
-
-            <p id="formMessage"></p>
-
-        </form>
-
-    </section>
-
-    <footer>
-
-        <p>
-            © <span id="year"></span> Nguyễn Hải Đăng
-        </p>
-
-    </footer>
+    <footer><p>© <span id="year"></span> Nguyễn Hải Đăng</p><p>Học tập bằng đam mê và sự kiên trì.</p></footer>
 
     <script src="script.js"></script>
 
