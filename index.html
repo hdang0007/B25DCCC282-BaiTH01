@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Hải Đăng - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">Đăng.dev</h2>
+
+            <button id="menuBtn">☰</button>
+
+            <ul id="menu">
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+
+            <button id="themeBtn">🌙</button>
+
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <p>Xin chào, mình là</p>
+
+            <h1>Nguyễn Hải Đăng</h1>
+
+            <h2>Sinh viên Công nghệ thông tin</h2>
+
+            <p>
+                Mình đang học tập và phát triển kỹ năng
+                lập trình Web, JavaScript và các công nghệ
+                liên quan đến CNTT.
+            </p>
+
+            <a href="#projects" class="btn">
+                Xem dự án
+            </a>
+
+        </div>
+
+    </section>
+
+    <section id="about" class="section">
+
+        <h2>Giới thiệu bản thân</h2>
+
+        <p>
+            Mình là sinh viên ngành Công nghệ thông tin.
+            
+            
+        </p>
+
+    </section>
+
+    <section id="skills" class="section">
+
+        <h2>Kỹ năng</h2>
+
+        <div class="skills">
+
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Xây dựng cấu trúc website.</p>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Thiết kế giao diện và responsive.</p>
+            </div>
+
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Tạo các chức năng tương tác.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Python</h3>
+                <p>Lập trình cơ bản và xử lý dữ liệu.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="projects" class="section">
+
+        <h2>Dự án của tôi</h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Tìm kiếm dự án..."
+        >
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>Quản lý thư viện</h3>
+
+                <p>
+                    Website quản lý sách, thành viên
+                    và hoạt động mượn trả.
+                </p>
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="project">
+                <h3>Quản lý đơn hàng</h3>
+
+                <p>
+                    Website quản lý đơn hàng và
+                    kiểm tra thông tin khách hàng.
+                </p>
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="project">
+                <h3>Website luyện tiếng Anh</h3>
+
+                <p>
+                    Website luyện tập từ vựng và
+                    các bài học tiếng Anh.
+                </p>
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact" class="section">
+
+        <h2>Liên hệ với tôi</h2>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Họ và tên"
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email"
+            >
+
+            <textarea
+                id="message"
+                placeholder="Nội dung tin nhắn"
+            ></textarea>
+
+            <button type="submit">
+                Gửi liên hệ
+            </button>
+
+            <p id="formMessage"></p>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © <span id="year"></span> Nguyễn Hải Đăng
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
